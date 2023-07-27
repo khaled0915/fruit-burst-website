@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit brust website</title>
 
+    <script src="https://kit.fontawesome.com/aaca9573cc.js" crossorigin="anonymous"></script>
+
     <!-- google fonts lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind customization -->
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+
+            'hero-bg': "url('./images/team.png')",
+
+          }
+        }
+      }
+    }
+  </script>
+
+
+
+
+
+
 
 <!-- font lato custom  -->
 
@@ -27,7 +51,7 @@
 
 <body class="font-lato">
 
-    <header class="container mx-auto">
+    <header class="max-w-screen-xl mx-auto  ">
 
         <!-- navbar starts here -->
 
@@ -40,7 +64,7 @@
                       <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                       </label>
-                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box flex bg-white lg:text-white justify-start w-52">
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box flex bg-white lg:text-white justify-start md:w-52">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -182,11 +206,11 @@
 
     </header>
 
-    <main class="container mx-auto">
+    <main class="">
 
         <!-- modal and card starts section -->
 
-        <section class="my-20">
+        <section class="my-20 max-w-screen-xl mx-auto">
 
             <!-- countdown part -->
 
@@ -194,7 +218,7 @@
 
                 <div>
 
-                    <h2 class="text-center font-extrabold text-5xl mb-5">
+                    <h2 class="text-center font-extrabold text-2xl lg:text-5xl mb-5">
                         Deal of the day
                     </h2>
                     <p class="text-center font-medium text-[#12121299]">
@@ -209,7 +233,7 @@
 
                     <div class="grid grid-flow-col gap-5 text-center ">
                         <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
+                          <span class="countdown font-mono text-2xl md:text-5xl">
                             <span style="--value:15;">
 
                             </span>
@@ -228,7 +252,7 @@
 
 
                         <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
+                          <span class="countdown font-mono text-2xl md:text-5xl">
                             <span style="--value:10;"></span>
                           </span>
                           hours
@@ -240,7 +264,7 @@
                         </div>
 
                         <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
+                          <span class="countdown font-mono text-2xl md:text-5xl">
                             <span style="--value:24;"></span>
                           </span>
                           min
@@ -252,7 +276,7 @@
                         </div>
 
                         <div class="flex flex-col">
-                          <span class="countdown font-mono text-5xl">
+                          <span class="countdown font-mono text-2xl md:text-5xl">
                             <span style="--value:31;"></span>
                           </span>
                           sec
@@ -553,12 +577,194 @@
 
 
 
+        <!-- team section starts here -->
+        <section class="mb-20 h-auto max-w-screen-xl mx-auto">
+
+
+            <div 
+            class="  bg-cover  bg-center " style="background-image: url('./images/team.png');">
+
+           
+                
+              <div class="bg-[#121212B3]">
+                <h3 class="text-center pt-[110px]
+              text-white font-extrabold text-[40px]">Meet the team section</h3>
+
+              <p class="py-10 text-center text-[#FFF] text-[16px] font-medium">
+                Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+              </p>
+              </div>
+
+              <!--  container -->
+              <div class="flex flex-col lg:space-x-20 justify-center items-center lg:flex-row bg-[#121212B3]  mb-5 ">
+
+                   <!-- 1st member -->
+
+                   <div class="flex flex-col justify-center mt-5 items-center" >
+
+                    <img class="" src="./images/member1.png" alt="">
+
+                    <h4 class=" font-bold text-white mt-5 ">Awlad Hossain</h4>
+                    <p class="text-white font-medium text-[16px]">
+                        Fruits Expert
+                    </p>
+
+                    <span class="flex justify-start gap-5 mt-3 "> 
+                        <img src="./facebook 1.png" alt="">
+                        <img src="./twitter (1) 1.png" alt="">
+                        <img src="./linkedin 1.png" alt="">
+                    </span>
+
+                </div>
+                
+
+                <!-- 2nd member -->
+
+
+                <div class="flex flex-col justify-center  mt-5 items-center" >
+
+                    <img class="" src="./images/member2.png" alt="">
+
+                    <h4 class=" font-bold text-white mt-5 ">Safia Chowdhury</h4>
+                    <p class="text-white font-medium text-[16px]">
+                        Fruits Expert
+                    </p>
+
+                    <span class="flex justify-start gap-5 mt-3 "> 
+                        <img src="./facebook 1.png" alt="">
+                        <img src="./twitter (1) 1.png" alt="">
+                        <img src="./linkedin 1.png" alt="">
+                    </span>
+
+                </div>
+
+                
+
+                <!-- 3rd member -->
+
+                <div class="flex flex-col justify-center  mt-5 items-center" >
+
+                    <img class="" src="./images/member3.png" alt="">
+
+                    <h4 class=" font-bold text-white mt-5 ">Rokib Hossain</h4>
+                    <p class="text-white font-medium text-[16px]">
+                        Fruits Expert
+                    </p>
+
+                    <span class="flex justify-start gap-5 mt-3 "> 
+                        <img src="./facebook 1.png" alt="">
+                        <img src="./twitter (1) 1.png" alt="">
+                        <img src="./linkedin 1.png" alt="">
+                    </span>
+
+                </div>
+              
+
+
+                <!-- 4th member -->
+                <div class="flex flex-col justify-center mt-5 items-center" >
+
+                    <img class="" src="./images/member4.png" alt="">
+
+                    <h4 class=" font-bold text-white mt-5 ">Chaity</h4>
+                    <p class="text-white font-medium text-[16px]">
+                        Fruits Expert
+                    </p>
+
+                    <span class="flex justify-start gap-5 mt-3 "> 
+                        <img src="./facebook 1.png" alt="">
+                        <img src="./twitter (1) 1.png" alt="">
+                        <img src="./linkedin 1.png" alt="">
+                    </span>
+
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+              </div>
+
+
+              
+
+
+
+          
+
+
+
+
+             
+
+            
+
+
+         
+
+
+
+
+        </section>
+
+
 
 
 
     </main>
-    <footer>
 
-    </footer>
+    <footer class="footer footer-center   bg-[#121212] lg:px-48 py-10 text-primary-content">
+        <div class="flex">
+
+            <img src="./images/logo.png" alt="">
+
+            <h5 class="text-white font-bold text-[40px] py-30 ">Fruit Burst</h5>
+         
+          
+        </div> 
+
+        <div class="grid grid-cols-3 md:grid-cols-6 md:gap-10 text-white ">
+            <p>
+                Home
+            </p>
+            <p>
+                About Us
+            </p>
+            <p>
+                Shop
+            </p>
+            <p>
+                All fruits
+            </p>
+            <p>
+                Support
+            </p>
+            <p>
+                My Account
+            </p>
+        </div>
+        <div>
+          <div class="grid text-white grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </div>
+      </footer>
+
+    
 </body>
 </html>
